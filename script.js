@@ -5,8 +5,6 @@ document.addEventListener("scroll", function () {
     let rocket = document.getElementById("paper-rocket");
 
 
-// ค่าตำแหน่งเริ่มต้นของจรวด
-let currentX = 0, currentY = 0;
 
 // กำหนดจุดที่จรวดต้องไป
 let keyframes = [
