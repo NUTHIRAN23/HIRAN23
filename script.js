@@ -23,9 +23,9 @@ function updateRocketPosition() {
   let targetY = currentFrame.target.y;
   let targetAngle = currentFrame.angle;
 
-  let newX = currentX + (targetX - currentX) * 0.05; // ปรับให้เคลื่อนนุ่มขึ้น
-  let newY = currentY + (targetY - currentY) * 0.05;
-  currentAngle += (targetAngle - currentAngle) * 0.05;
+  let newX = currentX + (targetX - currentX) * 0.01; // ปรับให้เคลื่อนนุ่มขึ้น
+  let newY = currentY + (targetY - currentY) * 0.01;
+  currentAngle += (targetAngle - currentAngle) * 0.01;
 
   rocket.style.transform = `translate(${newX}px, ${newY}px) rotate(${currentAngle}deg)`;
 
