@@ -23,7 +23,7 @@ function updateRocketPosition() {
   let targetY = currentFrame.target.y;
   let targetAngle = currentFrame.angle;
 
-  let newX = currentX + (targetX - currentX) * 0.01; // ปรับให้เคลื่อนนุ่มขึ้น
+  let newX = currentX + (targetX - currentX) * 0.01; 
   let newY = currentY + (targetY - currentY) * 0.01;
   currentAngle += (targetAngle - currentAngle) * 0.01;
 
@@ -35,5 +35,5 @@ function updateRocketPosition() {
   requestAnimationFrame(updateRocketPosition);
 }
 
-// เริ่ม animation loop
+
 updateRocketPosition();
