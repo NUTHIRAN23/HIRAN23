@@ -193,6 +193,9 @@ body {
     font-size: 16px;
     color: #444;
 }
+a:visited {
+    color: black;
+}
 .img-down {
     display: block;
     white-space: nowrap;
