@@ -1,0 +1,360 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(245, 242, 238);
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    text-align: left;
+    padding-top: 20px;
+}
+.header h1 {
+    font-size: 50pt;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+    align-items: center;
+}
+.phone img {
+    width: 20px;
+    margin-right: 8px;
+}
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    padding: 10px 30px;
+    border-bottom: 1.5px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.contact {
+    text-align: right;
+}
+.contact h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.contact a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.contact img {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+}
+.scroll-down {
+    font-size: 14px;
+    color: #666;
+}
+.scroll-down img {
+    width: 16px;
+    height: auto;
+    margin-left: 5px;
+    animation: bounce 1.5s infinite;
+}
+.Get-touch {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+.Let-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 0px;
+    gap: 20px;
+}
+.Let-touch h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    align-items: center;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 500px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+.contact-form button {
+    background-color: whitesmoke;
+    width: 150px;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form botton:hover {
+    background-color: #555;
+}
+.Let-text {
+    display: flex;
+    justify-content: right;
+    border-left: 2px solid whitesmoke;
+    position: relative;
+}
+#paper-rocket-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+#paper-rocket {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 100px;
+    transition: transform 0.2s ease-in-out;
+    z-index: 9999;
+}
+.top-divider {
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin-top: 20px;
+}
+.bottom-divider {
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.Introduction {
+    padding: 20px;
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+.Introduction h1 {
+    font-size: 40px;
+}
+.Burger {
+    height: 200px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.Burger {
+    height: 890px;
+    width: 1200px;
+    margin: auto;
+}
+  
+.theburger {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0px;
+}
+  
+.img-burger img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.grid-text-burger {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    height: 890px;
+}
+.text-burger {
+    padding: 10px;
+}
+.text-burger h1 {
+    font-size: 23pt;
+}
+.spacer {
+    display: block;
+    height: 20px;
+}
+.text-burger p {
+    font-size: 16pt;
+    font-weight: 100;
+}
+.grid-buttom-burger {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.burger-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burger-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burger-social-buttom,
+.burger-logo-buttom {
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #757575;
+}
+.burger-social-buttom:hover,
+.burger-logo-buttom:hover {
+    background-color: #e81c1b;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: background-color 0.5s ease;
+}
+.popup-image {
+    display: none;
+    position: absolute;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 9999;
+}
+.popup-burger img {
+    height: 600px;
+}
+.popup-logoburger img {
+    height: 300px;
+}
+.popup-ryvan img {
+    height: 600px;
+}
+.popup-logoryvan img {
+    height: 300px;
+}
+
+.Ryvan {
+    width: 1200px;
+    height: 890px;
+    margin: 0 auto;
+}
+.theryvan {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 890px;
+    width: 1200px;
+}
+.img-ryvan img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.grid-text-ryvan {
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 3fr 1fr;
+}
+.text-ryvan h1 {
+    font-size: 23pt;
+}
+.text-ryvan p {
+    font-size: 18pt;
+    font-weight: 100;
+}
+.grid-buttom-ryvan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ryvan-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ryvan-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ryvan-logo-buttom,
+.ryvan-social-buttom {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #757575;
+}
+.ryvan-logo-buttom:hover,
+.ryvan-social-buttom:hover {
+    background-color: #232822;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: background-color 0.5s ease;
+}
+@keyframes smoke-puff {
+    0% {
+      transform: translateX(-50%) translateY(0) scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(-50%) translateY(30px) scale(2);
+      opacity: 0;
+    }
+}
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1ft;
+    }
+    .item:nth-child(odd) {
+        border-right: none;
+    }
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}

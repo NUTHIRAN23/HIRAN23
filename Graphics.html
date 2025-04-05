@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Graphics</title>
+    <link rel="stylesheet" href="graphics.css">
+</head>
+<body>
+    <div class="paper-rocket-container">
+        <img src="PNG for Web/rocket.png" alt="paper rocket" id="paper-rocket">
+    </div>
+    <header class="header">
+        <div class="container">
+        <div class="text-profile">
+            <h1>Graphics Design<br>Digital Designer</h1>
+            <p>I create beautiful graphic designs that engage and inspire your audience. 
+                Let me bring your brand to life with my 3+ years of design experience and skills.</p>
+        </div>
+        <div class="contact">
+                <h1>CONTACT</h1>
+                <a href="mailto:nut.hiran23@gmail.com">nut.hiran23@gmail.com</a>
+                <a href="https://www.instagram.com/hiran.23/" target="_blank">
+                    <img src="PNG for Web/ig.svg" alt="instagram"> @hiran23
+                </a>
+                <a href="tel:0932652903">
+                    <img src="PNG for Web/tele.svg" alt="telephone">093-2652903 
+                </a>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <p class="location">(CNX, BKK, Thailand)</p>
+            <p class="scroll-down">Scroll Down <img src="PNG for Web/Scroll Down.svg"alt="Scroll Icon"></p>
+        </div>
+    </header>
+    <section class="Introduction">
+        <div class="Intro">
+            <h1>Build your brand with strong visual identity.</h1>
+            <p>I offer branding design services for businesses, cafés, food brands, and personal projects.From logo, fonts, and color palette 
+                to patterns, packaging, and social media templates — I help you craft a consistent and eye-catching brand.
+                <br>Whether you’re starting something new or refreshing your current style,
+                I’ll work closely with you to create visuals that truly represent your vibe.
+            </p>
+        </div>
+    </section>
+    <hr class="bottom-divider">
+    <section class="Burger">
+        <div class="theburger">
+            <div class="img-burger">
+                <img src="PNG for Web/Bueger.png" alt="BURGER">
+            </div>
+            <div class="grid-text-burger">
+                <div class="text-burger">
+                    <h1>Design that makes your 
+                        burger brand stand out.</h1>
+                    <p>I specialize in creating bold and 
+                        mouthwatering visuals for burger 
+                        shops and food businesses.
+                        From logo, font, color palette, and 
+                        packaging to social media content 
+                        and custom stickers —I design 
+                        a full brand identity that’s fun, 
+                        tasty-looking, and true to your vibe<div class="spacer"></div><p>Whether you’re launching 
+                        a new burger joint or leveling up 
+                        your visual game, I can help you 
+                        bring your flavor to life — visually 
+                        and creatively..</p>
+                </div>
+                <div class="grid-buttom-burger">
+                    <div class="burger-social">
+                        <div class="burger-social-buttom" onclick="togglePopup('popup-social-burger', event)"></div>
+                    </div>
+                    <div class="burger-logo">
+                        <div class="burger-logo-buttom" onclick="togglePopup('popup-logo-burger', event)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="bottom-divider">
+    <section class="Ryvan">
+        <div class="theryvan">
+            <div class="grid-text-ryvan">
+                <div class="text-ryvan">
+                    <h1>Design for brands that 
+                        dare to be different.</h1>
+                    <p>I create visual identities for 
+                        fashion brands that want to 
+                        stand out. From logos, 
+                        typography, color palettes, 
+                        to custom  social media content 
+                        and packaging — I help you build 
+                        a bold, modern, and expressive 
+                        brand.<div class="spacer"></div><p>Your style is more than clothes. 
+                        It’s a statement.
+                        Let me help you bring that vision 
+                        to life, with designs that speak 
+                        your story without saying a word..</p>
+                </div>
+                <div class="grid-buttom-ryvan">
+                    <div class="ryvan-logo">
+                        <div class="ryvan-logo-buttom" onclick="togglePopup('popup-logo-ryvan', event)"></div>
+                    </div>
+                    <div class="ryvan-social">
+                        <div class="ryvan-social-buttom" onclick="togglePopup('popup-social-ryvan', event)"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-ryvan">
+                <img src="PNG for Web/Ryvan.png" alt="RYVAN">
+            </div>
+        </div>
+    </section>
+    <hr class="bottom-divider">
+    <section class="Get-touch">
+        <div class="Let-grid">
+            <div class="Let-touch">
+                <h1>Let’s get in touch</h1>
+                <form class="contact-form"
+                action="https://docs.google.com/forms/d/e/1FAIpQLScmxu5j_Pol1X7_NzxAwCumAsB-fuHOqkcLuLFwzkwIaA6SRA/formResponse"
+                method="POST"
+                target="_blank">
+                    <input type="text" name="entry.1914350400" placeholder="name" required>
+                    <input type="email" name="entry.1681462569" placeholder="email" required>
+                    <textarea name="entry.1280969362" placeholder="message" required></textarea>
+                    <button type="submit" id="send-button">Send message</button>
+                </form>
+            </div>
+            <div class="Let-text">
+                <p>(Contact)</p>
+            </div>
+        </div>
+    <div class="popup-image popup-logoburger" id="popup-logo-burger">
+        <img src="PNG for Web/popup-logoBueger.png" alt="logo-burger" />
+    </div>
+    <div class="popup-image popup-burger" id="popup-social-burger">
+        <img src="PNG for Web/popup-Bueger.png" alt="social-burger" />
+    </div>
+    <div class="popup-image popup-logoryvan" id="popup-logo-ryvan">
+        <img src="PNG for Web/popup-logoRyvan.png" alt="logo-rtvan" />
+    </div>
+    <div class="popup-image popup-ryvan" id="popup-social-ryvan">
+        <img src="PNG for Web/popup-Ryvan.png" alt="social-ryvan" />
+    </div>
+    <script src="graphics.js"></script>
+</body>
+
+</html>
