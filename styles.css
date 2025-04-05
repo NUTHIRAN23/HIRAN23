@@ -185,7 +185,6 @@ body {
     border-bottom: none !important;
 }
 .item h2 {
-    color: black;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -194,9 +193,10 @@ body {
     font-size: 16px;
     color: #444;
 }
+a,
 a:visited {
-    color: black;
-    text-decoration: none;
+  color: black !important;
+  text-decoration: none;
 }
 .img-down {
     display: block;
