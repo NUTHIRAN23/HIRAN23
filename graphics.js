@@ -35,10 +35,6 @@ function updateRocketPosition() {
   requestAnimationFrame(updateRocketPosition);
 }
 
-
-updateRocketPosition();
-});
-
 function togglePopup(popupId, event) {
   const popup = document.getElementById(popupId);
   const button = event.target.closest("div");
