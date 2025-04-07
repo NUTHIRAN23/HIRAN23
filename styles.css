@@ -432,6 +432,9 @@ a:visited {
     display: block;
     margin: 0 auto;
 }
+.bg-buttom h2 {
+    color: black;
+}
 .dot {
     display: inline-block;
     width: 10px;
