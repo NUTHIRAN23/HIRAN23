@@ -429,6 +429,7 @@ a:visited {
     text-align: center;
 }
 .bg-buttom a {
+    color: black;
     display: block;
     margin: 0 auto;
 }
