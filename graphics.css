@@ -13,8 +13,24 @@ body {
     text-align: left;
     padding-top: 20px;
 }
+.header a {
+    color: black;
+}
 .header h1 {
     font-size: 50pt;
+}
+.header h1,
+.header h2 {
+    font-size: 50pt;
+}
+.header h1 {
+    margin-bottom: 10px;
+}
+.header h2 {
+    margin-top: 0px;
+}
+.Introduction p {
+    font-size: 20px;
 }
 .container {
     display: flex;
@@ -170,7 +186,6 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 
 .Introduction {
     padding: 20px;

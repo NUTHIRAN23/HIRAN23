@@ -77,10 +77,14 @@ body {
     margin-left: 5px;
     animation: bounce 1.5s infinite;
 }
-.text-profile {
+.text-profile h1 {
     position: relative;
-    font-size: 30px;
+    font-size: 70px;
     font-weight: bold;
+}
+.text-profile p {
+    position: relative;
+    font-size: 19px; 
 }
 .about-me {
     display: flex;
@@ -192,11 +196,6 @@ body {
 .item p {
     font-size: 16px;
     color: #444;
-}
-a,
-a:visited {
-  color: black !important;
-  text-decoration: none;
 }
 .img-down {
     display: block;
@@ -400,6 +399,11 @@ a:visited {
     border-left: 2px solid whitesmoke;
     position: relative;
 }
+
+a:visited {
+    color: black;
+}
+
 #paper-rocket-container {
     position: absolute;
     top: 0;
@@ -418,6 +422,25 @@ a:visited {
     z-index: 9999;
 }
 
+
+.bg-buttom {
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+}
+.bg-buttom a {
+    display: block;
+    margin: 0 auto;
+}
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
 @keyframes smoke-puff {
     0% {
       transform: translateX(-50%) translateY(0) scale(1);
