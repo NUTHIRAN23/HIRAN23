@@ -432,8 +432,8 @@ a:visited {
     color: black;
     display: block;
     margin: 0 auto;
-    text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration: underline !important;
+  text-decoration-color: black !important;
 }
 .bg-buttom h2 {
     color: black;
