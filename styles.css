@@ -12,12 +12,12 @@ body {
     height: auto;
     text-align: left;
     padding-top: 20px;
+    margin: 40px;
 }
 .container {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    max-width: 100%;
     align-items: center;
 }
 .phone img {
@@ -31,27 +31,19 @@ body {
     width: 85%;
     padding: 10px 30px;
     border-bottom: 1.5px solid black;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
 }
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: black;
-    color: antiquewhite;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
+
 .contact {
-    text-align: right;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 1fr 3fr;
 }
+
 .contact h1 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin: 0 auto;
 }
 .contact a {
     text-decoration: none;
@@ -86,12 +78,12 @@ body {
     position: relative;
     font-size: 19px; 
 }
-.about-me {
+.container-about-me {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 80%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     gap: 40px;
 }
@@ -113,7 +105,7 @@ body {
     justify-content: center;
     gap: 30px;
     width: 90%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0;
 }
@@ -121,72 +113,42 @@ body {
     flex: 1;
     font-size: 2rem;
     font-weight: bold;
-    max-width: 1300px;
+    max-width: 100%;
     line-height: 1.4;
     text-align: left;
     position: relative;
     padding-left: 30px;
 }
-.quote-left {
-    display: block;
-    font-size: 5rem;
-    margin-bottom: -70px;
-}
-.quote-right {
-    display: block;
-    font-size: 5rem;
-    position: relative;
-    margin-top: -50px;
-    left: 600px;
-}
-.about-label {
-    position: relative;
-    top: -60px;
-    right: 235px;
-    color: #666;
-}
-.about-divider {
-    max-width: 1300px;
-    width: 100%;
-    height: 1.5px;
-    background-color: black;
-    margin-top: 3%;
-    margin: 20px auto;
-}
+
+
 .what-i-do-section {
     display: flex;
-    width: 80%;
-    max-width: 1200px;
-    justify-content: space-between;
+    max-width: 100%;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 40px 0;
 }
 .container {
-    width: 80%;
-    max-width: 900px;
+    width: 100%;
+    max-width: 100%;
 }
-.grid {
+.item-grid {
     display: grid;
-    position: relative;
-    right: 180px;
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
-    max-width: 1200px;
-    margin: 0% auto;
-    margin-top: -10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
 }
 .item {
-    padding: 10px;
-    border-bottom: 2px solid black;
-    position: relative;
-}
-.item:nth-child(odd) {
-    border-right: 2px solid black;
-}
-.item:nth-child(3),
-.item:nth-child(4) {
-    border-bottom: none !important;
+    border: 2px solid #000000;
+    padding: 1.5rem;
+    border-radius: 8px;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
 }
 .item h2 {
     font-size: 30px;
@@ -229,25 +191,11 @@ body {
 }
 .Program-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: stretch;
-    justify-content: space-between;
-    width: 80%;
-    max-width: 1200px;
-    margin: auto;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
     padding: 20px 40px;
     gap: 20px;
-}
-.program-title {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 20px;
-    width: 100%;
-    height: auto;
-    min-width: 100%;
-    flex: 1;
 }
 .program-icon {
     display: flex;
@@ -421,6 +369,10 @@ a:visited {
     transition: transform 0.2s ease-in-out;
     z-index: 9999;
 }
+.mobile,
+.mobile-award {
+    display: none;
+}
 
 
 .bg-buttom {
@@ -429,14 +381,8 @@ a:visited {
     text-align: center;
 }
 .bg-buttom a {
-    color: black;
     display: block;
     margin: 0 auto;
-    text-decoration: underline !important;
-  text-decoration-color: black !important;
-}
-.bg-buttom h2 {
-    color: black;
 }
 .dot {
     display: inline-block;
@@ -457,70 +403,213 @@ a:visited {
       opacity: 0;
     }
 }
+
+
 @media screen and (max-width: 768px) {
-  .container, .container-what-i-do, .Edu-Exper-container, .Award-container, .Let-grid {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
-  }
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      padding: 1rem;
+    } 
+    .paper-rocket-container,
+    .scroll-down,
+    .top-divider,
+    .bottom-divider,
+    .img-down,
+    .program-titel,
+    .Edu-Exper-text,
+    .Let-text,
+    .quote-left,
+    .quote-right,
+    .about-label,
+    .contact h1,
+    .divider,
+    .bottom-section,
+    .Exper-grid,
+    .Award
+    {
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+      }
+    
+      .text-profile {
+        text-align: center;
+        max-width: 100%;
+      }
+      .text-profile h1 {
+        font-size: 45px;
+      }
+    
+      .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+      }
+    
+      .grid-contact {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .profile-pic img {
+        display: block;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+      .profile-pic {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      .about-text {
+        font-size: 1rem;
+        margin-top: 0;
+        padding-top: 0;
+        font-weight: 100;
+        max-width: 100%;
+        text-align: left;
+        position: relative;
+    }
+      .container-about-me {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 0;
 
-  .text-profile h1,
-  .contact h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .contact a {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  .about-me {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .profile-pic img {
-    width: 80%;
-    max-width: 300px;
-  }
-
-  .about-text p {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .program-icon {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .program-icon .icon {
-    margin: 1rem;
-  }
-
-  .Exper-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  #send-button {
-    width: 100%;
-  }
+    }
+    .item {
+        border: 1px solid #000000;
+        padding: 1rem;
+        border-radius: 8px;
+        padding: 1rem;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .item h2 {
+        font-weight: 200;
+        text-decoration: underline !important;
+        text-decoration-line: #000000 !important;
+        color: #000000 !important;
+    }
+    .grid {
+        gap: 1rem;
+    }
+    .bottom-section {
+        max-width: 481px;
+    }
+    div, section {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .what-i-do-section {
+        margin: 0 auto !important;
+        padding: 0 1rem !important;
+        box-sizing: border-box;
+        width: 100%;
+      }
+    
+      .container-what-i-do {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+    
+      
+    
+      .item {
+        max-width: 360px;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .item p {
+        display: none;
+      }
+      .Edu-Exper-container {
+        width: 100%;
+        display: flex;
+      }
+      .Edu-Exper {
+        max-width: 100%;
+      }
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem; /* ระยะห่างระหว่างบรรทัด */
+        padding: 1rem 0;
+      }
+    
+      .mobile p {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.6;
+        white-space: normal; /* ตัดการเว้นบรรทัดแบบ fix-width */
+      }
+      .mobile-award {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+      }
+      .Award-about-text {
+        font-size: 20px;
+        font-weight: 20;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 2;
+    }
+    .mobile-award h1 {
+        font-size: 30px;
+    }
+    body {
+        max-width: 481px;
+        margin: 0 auto;
+    }
+    .program-icon {
+        max-width: 481px;
+        margin-top: 0;
+        gap: 20px;
+    }
+    .program-icon p {
+        font-size: 10px;
+    }
+    .Get-touch {
+        max-width: 100%;
+    }
+    .Let-touch h1 {
+        font-size: 40px;
+    }
+    .Let-grid {
+        display: flex;
+    }
+    .contact-form {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto; 
+        padding: 0.5rem; 
+        box-sizing: border-box;
+      }
+    
+      .contact-form input,
+      .contact-form textarea,
+      .contact-form button {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    .item:nth-child(odd) {
+        border-right: none;
+    }
 }
 @keyframes bounce {
     0%, 100% {
